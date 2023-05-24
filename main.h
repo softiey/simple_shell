@@ -106,3 +106,5 @@ int hsh(p_info_t *, char **);
 int find_builtin(p_info_t *);
 void find_cmd(p_info_t *);
 void fork_cmd(p_info_t *);int hsh(p_info_t *, char **);
+
+#endif
