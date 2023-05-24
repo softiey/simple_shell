@@ -89,3 +89,20 @@ typedef struct builtin
 	char *type;
 	int (*func)(p_info_t *);
 } builtin_table;
+
+int interactive(p_info_t *);
+int is_delim(char, char *);
+int _isalpha(int);
+int _atoi(char *);
+int _myexit(p_info_t *);
+int _mycd(p_info_t *);
+int _myhelp(p_info_t *);
+int _myhistory(p_info_t *);
+int _myalias(p_info_t *);
+ssize_t get_input(p_info_t *);
+int _getline(p_info_t *, char **, size_t *);
+void sigintHandler(int);
+int hsh(p_info_t *, char **);
+int find_builtin(p_info_t *);
+void find_cmd(p_info_t *);
+void fork_cmd(p_info_t *);int hsh(p_info_t *, char **);
