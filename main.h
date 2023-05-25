@@ -106,5 +106,20 @@ int hsh(p_info_t *, char **);
 int find_builtin(p_info_t *);
 void find_cmd(p_info_t *);
 void fork_cmd(p_info_t *);int hsh(p_info_t *, char **);
+int loophsh(char **);
+void _eputs(char *);
+int _eputchar(char);
+int _putfd(char c, int fd);
+int _putsfd(char *str, int fd);
+char *_getenv(p_info_t *, const char *);
+int _myenv(p_info_t *);
+int _mysetenv(p_info_t *);
+int _myunsetenv(p_info_t *);
+int populate_env_list(p_info_t *);
+int is_chain(p_info_t *, char *, size_t *);
+void check_chain(p_info_t *, char *, size_t *, size_t, size_t);
+int replace_alias(p_info_t *);
+int replace_vars(p_info_t *);
+int replace_string(char **, char *);
 
 #endif
